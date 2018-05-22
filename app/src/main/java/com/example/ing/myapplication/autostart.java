@@ -24,6 +24,6 @@ public class autostart extends BroadcastReceiver
         AlarmManager am =( AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
         Intent i = new Intent(context, AlarmReceiver.class);
         PendingIntent pi = PendingIntent.getBroadcast(context, 1, i, PendingIntent.FLAG_UPDATE_CURRENT);
-        am.setRepeating(AlarmManager.RTC, System.currentTimeMillis(), 1000, pi);
+        am.setRepeating(AlarmManager.RTC, System.currentTimeMillis(), 1000*60*30, pi);
     }
 }
