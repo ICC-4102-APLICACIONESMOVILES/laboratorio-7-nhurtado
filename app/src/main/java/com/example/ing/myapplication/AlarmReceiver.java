@@ -37,6 +37,6 @@ public class AlarmReceiver extends BroadcastReceiver
         Random rand = new Random();
         int id = rand.nextInt();
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(id,mBuilder.build());;
+        notificationManager.notify(id,mBuilder.build());
     }
 }
